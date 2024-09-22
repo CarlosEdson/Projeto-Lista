@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-Lista</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <main>
@@ -16,7 +17,15 @@
             <input type="text" name="obj" id="obj">
             <button type="button">ADICIONAR</button>
         </form>
-        <section id="resultado"></section>
+        <ul>
+            <li>
+                item
+                <div>
+                    <button id="cancelar"><i class="ph-bold ph-x"></i></button>
+                    <button id="confirmar"><i class="ph-bold ph-check"></i></button>
+                </div>
+            </li>
+        </ul>
     </main>
 
     <script src="script.js"></script>

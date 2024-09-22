@@ -34,10 +34,31 @@ form > button{
     height: 25px;
     font-weight: bold;
 }
-section{
+li{
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
+li > div > button > i{
+    font-size: 15px;
+    cursor: pointer;
+}
+li > div > #confirmar{
+    background-color: green;
+}
+li > div > #cancelar{
+    background-color: red;
+}
+ul{
+    margin-top: 15px;
     border: 1px solid;
-    height: 300px;
-    width: 300px;
-    margin-top: 20px;
+    height: 40px;
+    width: 330px;
     background-color: white;
 }
