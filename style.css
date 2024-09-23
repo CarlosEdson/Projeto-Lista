@@ -34,31 +34,35 @@ form > button{
     height: 25px;
     font-weight: bold;
 }
+span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+ul{
+    border: 1px solid;
+    height: 30px;
+    width: 330px;
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    display: block;
+}
 li{
     list-style-type: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: 10px;
 }
-li > div > button > i{
+#confirmar{
+    background-color: green;
     font-size: 15px;
     cursor: pointer;
+    margin: 0px 10px;
 }
-li > div > #confirmar{
-    background-color: green;
-}
-li > div > #cancelar{
+#cancelar{
     background-color: red;
-}
-ul{
-    margin-top: 15px;
-    border: 1px solid;
-    height: 40px;
-    width: 330px;
-    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
 }
