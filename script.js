@@ -5,19 +5,16 @@ document.querySelector('button').addEventListener("click", () => {
     let input = document.querySelector('#obj')
     let valor = input.value
 
-    const li = document.createElement('li')
-    li.textContent = valor
-    li.setAttribute()
-    ul.appendChild(li);
-
-
-
-    input.textContent = ""
+    input.textContent = " "
     input.focus()
 
-
-
-
+    const li = document.createElement('li')
+    li.textContent = valor
+    ul.appendChild(li)
 
     console.log(input.value)
+})
+
+document.querySelector('#confirmar').addEventListener("click", () => {
+    ul.style.background("black")
 })
