@@ -5,16 +5,21 @@ document.querySelector('button').addEventListener("click", () => {
     let input = document.querySelector('#obj')
     let valor = input.value
 
-    input.textContent = " "
-    input.focus()
-
-    const li = document.createElement('li')
-    li.textContent = valor
-    ul.appendChild(li)
+    if(input.value == ""){
+        alert("ERRO, POR FAVOR PREENCHA O CAMPO DE TAREFAS")
+    } else {
+        const li = document.createElement('li')
+        li.textContent = valor
+        ul.appendChild(li)
+    }
 
     console.log(input.value)
 })
 
 document.querySelector('#confirmar').addEventListener("click", () => {
-    ul.style.background("black")
+    ul.style.textDecoration = "line-through"
+})
+
+document.querySelector('#cancelar').addEventListener("click", () => {
+    ul.remove(ul)
 })
