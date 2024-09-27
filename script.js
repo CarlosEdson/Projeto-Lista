@@ -7,9 +7,8 @@ document.querySelector('button').addEventListener("click", () => {
     if(camponome == ""){
         alert("ERRO, POR FAVOR PREENCHA O CAMPO DE TAREFAS")
     } else {
-        const li = document.createElement('li')
-        li.textContent = camponome
-        ul.appendChild(li)
+
+        ul.innerHTML += `<li>${camponome}</li>`
 
         const button = document.createElement('button')
         li.appendChild(button)
