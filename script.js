@@ -2,16 +2,21 @@ const ul = document.querySelector('ul')
 let metasProgramadas = []
 
 document.querySelector('button').addEventListener("click", () => {
+
     let camponome = document.querySelector('#obj').value
     
     if(camponome == ""){
         alert("ERRO, POR FAVOR PREENCHA O CAMPO DE TAREFAS")
     } else {
 
-        ul.innerHTML += `<li>${camponome}</li>`
-
-        const button = document.createElement('button')
-        li.appendChild(button)
+        function addListItem(text){
+            const listItemHTML = `<ul><li>${camponome}<div>
+                    <button id="cancelar"><i class="ph-bold ph-x"></i></button>
+                    <button id="confirmar"><i class="ph-bold ph-check"></i></button>
+                </div></li></ul>`
+            const list = document.querySelector('ul')
+            list.insertAdjacentHTML('beforeend', listItemHTML)
+        }
     }
 
     if(metasProgramadas.includes(camponome)){
@@ -20,6 +25,7 @@ document.querySelector('button').addEventListener("click", () => {
         metasProgramadas.push(camponome)
     }
 
+    addListItem()
     console.log(metasProgramadas)
 })
 
@@ -30,3 +36,10 @@ document.querySelector('#confirmar').addEventListener("click", () => {
 document.querySelector('#cancelar').addEventListener("click", () => {
     ul.remove(ul)
 })
+
+
+/*ul.innerHTML += `<li>${camponome}</li>`
+
+        const button = document.createElement('button')
+        li.appendChild(button)
+*/
