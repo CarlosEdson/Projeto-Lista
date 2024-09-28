@@ -1,4 +1,5 @@
 const ul = document.querySelector('ul')
+const li = document.querySelector('li')
 let metasProgramadas = []
 
 document.querySelector('button').addEventListener("click", () => {
@@ -16,6 +17,14 @@ document.querySelector('button').addEventListener("click", () => {
                 </div></li></ul>`
             const list = document.querySelector('ul')
             list.insertAdjacentHTML('beforeend', listItemHTML)
+
+            document.querySelector('#confirmar').addEventListener("click", () => {
+                li.style.textDecoration = "line-through"
+            })
+            
+            document.querySelector('#cancelar').addEventListener("click", () => {
+                ul.remove(ul)
+            })
         }
     }
 
@@ -28,15 +37,6 @@ document.querySelector('button').addEventListener("click", () => {
     addListItem()
     console.log(metasProgramadas)
 })
-
-document.querySelector('#confirmar').addEventListener("click", () => {
-    ul.style.textDecoration = "line-through"
-})
-
-document.querySelector('#cancelar').addEventListener("click", () => {
-    ul.remove(ul)
-})
-
 
 /*ul.innerHTML += `<li>${camponome}</li>`
 
