@@ -9,7 +9,6 @@ document.querySelector('button').addEventListener("click", () => {
     if(camponome == ""){
         alert("ERRO, POR FAVOR PREENCHA O CAMPO DE TAREFAS")
     } else {
-
         function addListItem(text){
             const listItemHTML = `<ul><li>${camponome}<div>
                     <button id="cancelar"><i class="ph-bold ph-x"></i></button>
@@ -17,14 +16,6 @@ document.querySelector('button').addEventListener("click", () => {
                 </div></li></ul>`
             const list = document.querySelector('ul')
             list.insertAdjacentHTML('beforeend', listItemHTML)
-
-            document.querySelector('#confirmar').addEventListener("click", () => {
-                li.style.textDecoration = "line-through"
-            })
-            
-            document.querySelector('#cancelar').addEventListener("click", () => {
-                ul.remove(ul)
-            })
         }
     }
 
@@ -37,3 +28,13 @@ document.querySelector('button').addEventListener("click", () => {
     addListItem()
     console.log(metasProgramadas)
 })
+/*
+
+document.querySelector('#confirmar').addEventListener("click", () => {
+    li.style.textDecoration = "line-through"
+})
+
+document.querySelector('#cancelar').addEventListener("click", () => {
+    ul.remove(ul)
+})
+    */
