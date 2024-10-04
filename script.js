@@ -37,9 +37,3 @@ document.querySelector('button').addEventListener("click", () => {
     addListItem()
     console.log(metasProgramadas)
 })
-
-/*ul.innerHTML += `<li>${camponome}</li>`
-
-        const button = document.createElement('button')
-        li.appendChild(button)
-*/
