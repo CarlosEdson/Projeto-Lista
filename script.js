@@ -12,7 +12,7 @@ document.querySelector('button').addEventListener("click", () => {
         function addListItem(text){
             const listItemHTML = `<ul><li>${camponome}<div>
                     <button id="cancelar"><i class="ph-bold ph-x"></i></button>
-                    <button id="confirmar"><i class="ph-bold ph-check"></i></button>
+                    <button id="confirmar" onclick="confirmar"><i class="ph-bold ph-check"></i></button>
                 </div></li></ul>`
             const list = document.querySelector('ul')
             list.insertAdjacentHTML('beforeend', listItemHTML)
@@ -28,12 +28,11 @@ document.querySelector('button').addEventListener("click", () => {
     addListItem()
     console.log(metasProgramadas)
 })
-/*
 
-document.querySelector('#confirmar').addEventListener("click", () => {
+function confirmar(){
     li.style.textDecoration = "line-through"
-})
-
+}
+/*
 document.querySelector('#cancelar').addEventListener("click", () => {
     ul.remove(ul)
 })
