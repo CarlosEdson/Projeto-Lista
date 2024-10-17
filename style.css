@@ -1,68 +1,59 @@
 @charset "UTF-8";
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
 }
 main{
-    margin-top: 50px;
     border: 1px solid;
-    height: 500px;
-    width: 400px;
+    width: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.719);
 }
-main > div > h1{
-    margin-top: 50px;
-    margin-bottom: 20px;
+main h1{
+    border: 1px solid;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    background-color: darkgray;
 }
-form > label{
-    font-size: 25px;
+form .campodeformulario input{
+    height: 30px;
+    width: 400px;
+    margin-top: 20px;
 }
-form > input{
-    height: 20px;
-    width: 250px;
+form .campodeformulario button{
+    height: 30px;
+    width: 80px;
 }
-form > button{
-    height: 25px;
-    font-weight: bold;
-}
-span{
+.campodeformulario > input{
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+}
+form .itensdelista h3{
+    border: 1px solid;
+    text-align: center;
+    margin-top: 10px;
+    background-color: darkgrey;
 }
 ul{
-    border: 1px solid;
-    height: 30px;
-    width: 330px;
-    position: relative;
-    background-color: white;
+    border: 3px solid;
+    height: 230px;
     margin-top: 10px;
-    display: block;
 }
 li{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-#confirmar{
-    background-color: green;
-    font-size: 15px;
-    cursor: pointer;
-    margin: 0px 10px;
-}
-#cancelar{
-    background-color: red;
-    font-size: 15px;
-    cursor: pointer;
+    list-style: none;
+    border: 1px solid;
+    height: 25px;
+    font-size: 20px;
+    background-color: lightblue;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

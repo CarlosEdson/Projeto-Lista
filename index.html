@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto-Lista</title>
+    <title>ProjetoLista</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <main>
-        <div>
+        <header>
             <h1>Lista de Tarefas</h1>
-        </div>
+        </header>
         <form action="#">
-            <label for="obj">Digite suas tarefas:</label> <br>
-            <input type="text" name="obj" id="obj">
-            <button type="button">ADICIONAR</button>
+            <div class="campodeformulario">
+                <input type="text" name="#" id="campo-tarefas" placeholder="Tarefas">
+                <button type="button" id="adicionar">Adicionar</button>
+            </div>
+            <div class="itensdelista">
+                <h3>Itens</h3>
+                <div id="resultado"></div>
+                <ul>
+                </ul>
+            </div>
         </form>
-        <ul>
-            <li>
-                <span>item</span>
-            </li>
-        </ul>
     </main>
 
-    <script src="script.js"></script>
+    <script src="funcoes.js"></script>
 </body>
 </html>
