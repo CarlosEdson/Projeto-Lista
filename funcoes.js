@@ -16,12 +16,15 @@ document.querySelector('#adicionar').addEventListener
 
     function criandoElementos(){
         let li = document.createElement('li')
-        ul.appendChild(li)
         let ul = document.querySelector('ul')
+        ul.appendChild(li)
         li.innerHTML += camponome
 
-        let botao = document.createElement('button')
-        li.appendChild(botao)
+        let botaoConfirmar = document.createElement('button')
+        li.appendChild(botaoConfirmar)
+
+        let botaoCancelar = document.createElement('button')
+        li.appendChild(botaoCancelar)
     }
 
     criandoElementos()
