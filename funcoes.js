@@ -22,14 +22,26 @@ document.querySelector('#adicionar').addEventListener
 
         let botaoConfirmar = document.createElement('button')
         li.appendChild(botaoConfirmar)
+        botaoConfirmar.innerHTML = `<i class="ph-bold ph-check-fat"></i>`
+        botaoConfirmar.style.background = "green";
+        botaoConfirmar.style.color = "black";
+        botaoConfirmar.style.fontSize = "15px";
+        botaoConfirmar.style.marginRight = "5px";
+        botaoConfirmar.style.cursor = "pointer";
+        botaoConfirmar.style.marginLeft = "350px";
 
         let botaoCancelar = document.createElement('button')
         li.appendChild(botaoCancelar)
+        botaoCancelar.innerHTML = `<i class="ph-bold ph-x"></i>`
+        botaoCancelar.style.background = "red";
+        botaoCancelar.style.color = "black";
+        botaoCancelar.style.fontSize = "15px";
+        botaoCancelar.style.cursor = "pointer";
     }
 
     criandoElementos()
 
     console.log(taref)  //campo de acompanhamento
     console.log(camponome) //campo de acompanhamento
-    console.log(taref.length)
+    console.log(taref.length) //campo de acompanhamento
 })

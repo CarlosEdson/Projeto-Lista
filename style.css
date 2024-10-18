@@ -47,6 +47,7 @@ ul{
     border: 3px solid;
     height: 230px;
     margin-top: 10px;
+    overflow: scroll;
 }
 li{
     list-style: none;
