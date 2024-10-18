@@ -42,6 +42,7 @@ form .itensdelista h3{
     text-align: center;
     margin-top: 10px;
     background-color: darkgrey;
+    justify-content: space-around;
 }
 ul{
     border: 3px solid;
@@ -50,6 +51,8 @@ ul{
     overflow: scroll;
 }
 li{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     border: 1px solid;
     height: 25px;

@@ -4,8 +4,8 @@ document.querySelector('#adicionar').addEventListener
 ('click', () => {
     let camponome = document.querySelector('#campo-tarefas').value
 
-    if(camponome === ""){
-        alert("ERRO, CAMPO NÃO PREENCHIDO")
+    if(camponome === "" || camponome === taref){
+        alert("ERRO, CAMPO NÃO PREENCHIDO OU TAREFA REPETIDA")
     } else {
         if(taref.includes(camponome)){
             alert("ERRO, JÁ CADASTRADO")
@@ -26,9 +26,13 @@ document.querySelector('#adicionar').addEventListener
         botaoConfirmar.style.background = "green";
         botaoConfirmar.style.color = "black";
         botaoConfirmar.style.fontSize = "15px";
-        botaoConfirmar.style.marginRight = "5px";
         botaoConfirmar.style.cursor = "pointer";
-        botaoConfirmar.style.marginLeft = "350px";
+        botaoConfirmar.style.marginLeft = "78%";
+
+        botaoConfirmar.addEventListener('click', () => {
+            alert("PARABENS, TAREFA CONCLUIDA")
+            ul.style.textDecoration = "line-through";
+        })
 
         let botaoCancelar = document.createElement('button')
         li.appendChild(botaoCancelar)
@@ -37,6 +41,11 @@ document.querySelector('#adicionar').addEventListener
         botaoCancelar.style.color = "black";
         botaoCancelar.style.fontSize = "15px";
         botaoCancelar.style.cursor = "pointer";
+
+        botaoCancelar.addEventListener('click', () => {
+            ul.removeChild(li)
+            taref.pop(ul)
+        })
     }
 
     criandoElementos()
