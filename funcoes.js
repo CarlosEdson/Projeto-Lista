@@ -18,21 +18,13 @@ document.querySelector('#adicionar').addEventListener
             let ul = document.querySelector('ul')
             ul.appendChild(li)
             li.innerHTML += camponome
-    
-            let botaoConfirmar = document.createElement('button')
-            li.appendChild(botaoConfirmar)
-            botaoConfirmar.innerHTML = `<i class="ph-bold ph-check-fat"></i>`
-            botaoConfirmar.style.background = "green";
-            botaoConfirmar.style.color = "black";
-            botaoConfirmar.style.fontSize = "15px";
-            botaoConfirmar.style.cursor = "pointer";
-            botaoConfirmar.style.marginLeft = "340px";
-    
-            botaoConfirmar.addEventListener('click', () => {
-                alert("PARABENS, TAREFA CONCLUIDA")
+
+            let checkbox = document.createElement('input:checkbox')
+            li.appendChild(checkbox)
+            checkbox.innerHTML = '<input type="checkbox">'
+            checkbox.style.position = "absolute";
+            checkbox.addEventListener("click", () => {
                 li.style.textDecoration = "line-through";
-    
-                li.removeChild(botaoConfirmar)
             })
     
             let botaoCancelar = document.createElement('button')

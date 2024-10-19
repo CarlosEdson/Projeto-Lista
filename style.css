@@ -47,17 +47,20 @@ form .itensdelista h3{
 ul{
     border: 3px solid;
     height: 230px;
+    width: 98%;
     margin-top: 10px;
     overflow: scroll;
 }
 li{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style: none;
     border: 1px solid;
     height: 25px;
+    width: 97%;
     font-size: 20px;
     background-color: lightblue;
-    padding-left: 10px;
+    padding-left: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
