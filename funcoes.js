@@ -27,11 +27,13 @@ document.querySelector('#adicionar').addEventListener
         botaoConfirmar.style.color = "black";
         botaoConfirmar.style.fontSize = "15px";
         botaoConfirmar.style.cursor = "pointer";
-        botaoConfirmar.style.marginLeft = "78%";
+        botaoConfirmar.style.marginLeft = "340px";
 
         botaoConfirmar.addEventListener('click', () => {
             alert("PARABENS, TAREFA CONCLUIDA")
-            ul.style.textDecoration = "line-through";
+            li.style.textDecoration = "line-through";
+
+            li.removeChild(botaoConfirmar)
         })
 
         let botaoCancelar = document.createElement('button')
