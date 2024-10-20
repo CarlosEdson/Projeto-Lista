@@ -32,7 +32,7 @@ document.querySelector('#adicionar').addEventListener
                 li.style.textDecoration = "line-through";
                 alert("PARABENS, TAREFA CONCLUIDA")
             })
-    
+
             let botaoCancelar = document.createElement('button')
             div.appendChild(botaoCancelar)
             botaoCancelar.innerHTML = `<i class="ph-bold ph-x"></i>`
@@ -53,7 +53,7 @@ document.querySelector('#adicionar').addEventListener
         }
         criandoElementos()
     }
-
+    document.querySelector('#campo-tarefas').focus()
 
     console.log(taref)  //campo de acompanhamento
     console.log(camponome) //campo de acompanhamento
