@@ -30,6 +30,7 @@ document.querySelector('#adicionar').addEventListener
             checkbox.style.margin = "5px";
             checkbox.addEventListener("click", () => {
                 li.style.textDecoration = "line-through";
+                alert("PARABENS, TAREFA CONCLUIDA")
             })
     
             let botaoCancelar = document.createElement('button')
