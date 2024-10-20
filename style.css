@@ -8,6 +8,7 @@ body{
     position: absolute;
     top: 20%;
     left: 30%;
+    position: fixed;
 }
 main{
     border: 1px solid;
@@ -52,15 +53,13 @@ ul{
     overflow: scroll;
 }
 li{
-    display: flex;
+    display: flexbox;
     flex-direction: row;
-    justify-content: space-between;
     list-style: none;
-    border: 1px solid;
     height: 25px;
-    width: 97%;
+    width: 85%;
+    margin-left: 5%;
     font-size: 20px;
-    background-color: lightblue;
     padding-left: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

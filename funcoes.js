@@ -16,27 +16,37 @@ document.querySelector('#adicionar').addEventListener
         function criandoElementos(){
             let li = document.createElement('li')
             let ul = document.querySelector('ul')
-            ul.appendChild(li)
+            let div = document.createElement('div')
+            div.appendChild(li)
             li.innerHTML += camponome
 
+            ul.appendChild(div)
+            div.style.display = "flex";
+
             let checkbox = document.createElement('input:checkbox')
-            li.appendChild(checkbox)
+            div.appendChild(checkbox)
             checkbox.innerHTML = '<input type="checkbox">'
             checkbox.style.position = "absolute";
+            checkbox.style.margin = "5px";
             checkbox.addEventListener("click", () => {
                 li.style.textDecoration = "line-through";
             })
     
             let botaoCancelar = document.createElement('button')
-            li.appendChild(botaoCancelar)
+            div.appendChild(botaoCancelar)
             botaoCancelar.innerHTML = `<i class="ph-bold ph-x"></i>`
             botaoCancelar.style.background = "red";
             botaoCancelar.style.color = "black";
             botaoCancelar.style.fontSize = "15px";
             botaoCancelar.style.cursor = "pointer";
+            botaoCancelar.style.height = "20px";
+            botaoCancelar.style.width = "20px";
+            botaoCancelar.style.position = "absolute";
+            botaoCancelar.style.marginLeft = "85%";
+            botaoCancelar.style.marginTop = "3px";
     
             botaoCancelar.addEventListener('click', () => {
-                ul.removeChild(li)
+                ul.removeChild(div)
                 taref.pop(ul)
             })
         }
