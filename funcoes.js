@@ -45,7 +45,7 @@ document.querySelector('#adicionar').addEventListener
                 botaoCancelar.style.height = "20px";
                 botaoCancelar.style.width = "20px";
                 botaoCancelar.style.position = "absolute";
-                botaoCancelar.style.marginLeft = "24%";
+                botaoCancelar.style.marginLeft = "280px";
                 botaoCancelar.style.marginTop = "3px";
         
                 botaoCancelar.addEventListener('click', () => {
