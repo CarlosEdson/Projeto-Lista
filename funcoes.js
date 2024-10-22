@@ -16,8 +16,8 @@ document.querySelector('#adicionar').addEventListener
                 let li = document.createElement('li')
                 let ul = document.querySelector('ul')
                 let div = document.createElement('div')
-                div.appendChild(li)
                 li.innerHTML += camponome
+                div.appendChild(li)
                 ul.appendChild(div)
                 div.style.display = "flex";
                 div.style.justifyContent = "space-between";
@@ -26,6 +26,7 @@ document.querySelector('#adicionar').addEventListener
                 
                 let checkbox = document.createElement('input:checkbox')
                 div.appendChild(checkbox)
+                ul.appendChild(div)
                 checkbox.innerHTML = '<input type="checkbox">'
                 checkbox.style.position = "absolute";
                 checkbox.style.margin = "5px";
@@ -37,6 +38,7 @@ document.querySelector('#adicionar').addEventListener
     
                 let botaoCancelar = document.createElement('button')
                 div.appendChild(botaoCancelar)
+                ul.appendChild(div)
                 botaoCancelar.innerHTML = `<i class="ph-bold ph-x"></i>`
                 botaoCancelar.style.background = "red";
                 botaoCancelar.style.color = "black";
