@@ -27,7 +27,6 @@ document.addEventListener('keypress', (event) => {
                         div.style.width = "87%";
                         div.style.height = "20px";
                         div.style.overflow = "auto";
-                        div.style.border = "1px solid green";
                         
                         let checkbox = document.createElement('input:checkbox')
                         div.appendChild(checkbox)
