@@ -22,18 +22,17 @@ document.addEventListener('keypress', (event) => {
                         div.appendChild(li)
                         ul.appendChild(div)
                         div.style.display = "flex";
-                        div.style.justifyContent = "space-between";
+                        div.style.alignItems = "center";
                         div.style.marginLeft = "5%";
                         div.style.width = "87%";
                         div.style.height = "20px";
-                        div.style.overflow = "auto";
                         
                         let checkbox = document.createElement('input:checkbox')
                         div.appendChild(checkbox)
                         ul.appendChild(div)
                         checkbox.innerHTML = '<input type="checkbox">'
                         checkbox.style.position = "absolute";
-                        checkbox.style.margin = "5px";
+                        checkbox.style.marginTop = "5px";
                         checkbox.addEventListener("click", () => {
                         li.style.textDecoration = "line-through";
                         alert("PARABENS, TAREFA CONCLUIDA")
@@ -52,8 +51,8 @@ document.addEventListener('keypress', (event) => {
                         botaoCancelar.style.width = "20px";
                         botaoCancelar.style.position = "absolute";
                         botaoCancelar.style.marginLeft = "280px";
-                        botaoCancelar.style.marginTop = "3px";
-                
+                        botaoCancelar.style.marginTop = "2px";
+
                         botaoCancelar.addEventListener('click', () => {
                             ul.removeChild(div)
                             taref.pop(ul)
