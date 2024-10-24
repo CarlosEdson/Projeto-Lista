@@ -34,9 +34,8 @@ document.addEventListener('keypress', (event) => {
                         checkbox.style.position = "absolute";
                         checkbox.style.marginTop = "5px";
                         checkbox.addEventListener("click", () => {
-                        li.style.textDecoration = "line-through";
-                        alert("PARABENS, TAREFA CONCLUIDA")
-                        taref.pop(div)
+                            li.style.textDecoration = "line-through";
+                            taref.pop(div)
                         })
             
                         let botaoCancelar = document.createElement('button')
